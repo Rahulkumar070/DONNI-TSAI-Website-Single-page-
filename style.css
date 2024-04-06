@@ -1,0 +1,88 @@
+@font-face {
+  font-family: plain;
+  src: url(./plain-regular-webfont.woff);
+}
+@font-face {
+  font-family: yapari;
+  src: url(./Yapari-SemiBold.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  overflow: hidden;
+}
+
+#nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2vw;
+  font-family: plain;
+}
+#nav h1 {
+  font-weight: 300;
+}
+
+#hero img {
+  padding: 3vw;
+  height: 60vh;
+  width: 100vw;
+}
+#body1 {
+  font-family: plain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0vh 3vw;
+}
+#body1 h2 {
+  padding-top: 3vh;
+}
+
+#last {
+  font-family: yapari;
+  padding: 2vw;
+}
+
+#last h1 {
+  font-size: 10vw;
+  -webkit-animation: fontmove 3s infinite;
+  animation: fontmove 3s infinite;
+  -webkit-animation-timing-function: cubic-bezier(10.175, 10.885, 5.32, 1.275);
+  animation-timing-function: cubic-bezier(10.175, 10.885, 5.32, 1.275);
+}
+
+@-webkit-keyframes fontmove {
+  50% {
+    font-size: 10.5vw;
+  }
+}
+
+@keyframes fontmove {
+  50% {
+    font-size: 10.5vw;
+  }
+}
